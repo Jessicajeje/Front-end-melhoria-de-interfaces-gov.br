@@ -1,8 +1,6 @@
 
 //navegações entre páginas
-function irLoginSenha() {
-  window.location.href="loginSenha.html";
-}
+
 function irMensagem(){
   window.location.href="mensagemPostal.html";
 }
