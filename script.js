@@ -87,10 +87,7 @@ botaoConcluir.addEventListener('click', function() {
 });
 //sair do app
 function logoutSimulation() {
-  
-    localStorage.removeItem('isUserLoggedIn'); 
-    localStorage.removeItem('userName');
-    sessionStorage.clear();
-    window.location.href = 'index.html'; 
+    window.location.href = 'index.html';
+}
 
 
