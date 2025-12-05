@@ -4,6 +4,9 @@
 function irMensagem(){
   window.location.href="mensagemPostal.html";
 }
+function irSenha(){
+  window.location.href="loginSenha.html"
+}
 function irCadastro(){
   window.location.href="cadastro.html";
 }
