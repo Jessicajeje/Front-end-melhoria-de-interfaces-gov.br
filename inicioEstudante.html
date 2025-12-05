@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu do Estudante</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app inicio paginas-comuns">
+      <div class="inicioAcima">
+        <img src="imgs/logoGov.png" alt="" />
+        <div class="boasVindas">
+          <p>Olá, Estudante!</p>
+
+          <div class="fotoPerfil">
+            <img src="imgs/perfil.png" alt="" />
+          </div>
+        </div>
+        <div class="search-box">
+  <img src="imgs/lupa.png" alt="">
+  <input type="search" id="pesquisaServicos" placeholder="Mais serviços..." />
+
+  <ul id="lista">
+    <li data-tags="documentos identidade rg cpf carteira">Meus documentos</li>
+    <li data-tags="dinheiro auxilio beneficio bolsa fgts">Meus benefícios</li>
+    <li data-tags="assinatura documento digital">Assinar documentos</li>
+    <li data-tags="caixa postal carta correio">Caixa postal</li>
+    <li data-tags="certidao certidões emitir pdf">Baixar certidões</li>
+    <li data-tags="agenda calendario agendar consulta">Agenda gov.br</li>
+    <li data-tags="enem prova estudo educação"><a href="https://enem.inep.gov.br/participante">quero fazer o ENEM</a></li>
+    <li data-tags="sisu prova estudo educação"><a href="https://sisu.mec.gov.br/#/como-se-inscrever#onepage">Sobre o SISU</a></li>
+    <li data-tags="VEM vem passe transporte"><a href="https://cartaovem.com.br/home">Meu cartão VEM</a></li>
+    <li data-tags="carteira cie CIE carteirinha estudante educação transporte"><a href="https://www.granderecife.pe.gov.br/servicos/carteira-de-identificacao-estudantil/">Carteira de Estudante</a></li>
+  </ul>
+</div>
+      </div>
+      <div class="conteudoRolavel">
+        <div class="servicos-gerais">
+            <div class="servicos-estudantis">
+          <h2>Serviços Esudantis</h2>
+          <ul>
+            <li onclick="irCarteiraEstudante()">
+              
+              <span>Carteira de estudante</span>
+            </li>
+            <li>
+              
+              <span>Bolsas estudantis</span>
+            </li>
+            <li onclick="irEnemSISU()">
+            
+              <span>Acesso rápido ao ENEM e SISU</span>
+            </li>
+            <li onclick="window.location.href='https://cartaovem.com.br/home'">
+              
+              <span>VEM</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+          <h2>Serviços gerais</h2>
+          <ul>
+            <li onclick="irDocumentos()">
+              <img src="imgs/icons8-carteira-50.png" alt="">
+              <span>Meus documentos</span>
+            </li>
+            <li onclick="irBeneficios()">
+              <img src="imgs/icons8-saco-de-dinheiro-30.png" alt="" />
+              <span>Meus beneficios</span>
+            </li>
+            <li onclick="irAssinarDoc()">
+              <img src="imgs/icons8-assinar-documento-64.png" alt="" />
+              <span>Assinar documentos digitalmente</span>
+            </li>
+            <li onclick="irPostal()">
+              <img src="imgs/icons8-carta-50.png" alt="" />
+              <span>Caixa postal</span>
+            </li>
+            <li onclick="irCertidao()">
+              <img src="imgs/icons8-baixar-documento-24.png" alt="" />
+              <span>Baixar certidões</span>
+            </li>
+             <li onclick="">
+              <img src="imgs/calendarioazul.png" alt="" />
+              <span>Agenda gov.br</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- sidebar -->
+      <nav class="menu-lateral">
+        <div class="cabeca-menu">
+          <img src="imgs/logoGov.png" alt="" style="height: 30px" />
+          <p>versão:beta-interface</p>
+        </div>
+        <ul>
+          <li class="item-menu">
+            <a href="#">
+              <img src="imgs/icons8-livro-de-regras-48.png" alt="" />
+              <span class="txt-link">Termos de uso</span></a
+            >
+          </li>
+          <li class="item-menu">
+            <a href="#">
+              <img src=" imgs/icons8-sair-48.png" alt="" />
+              <span class="txt-link">Sair e desvincular sua conta</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="#">
+              <img src="imgs/icons8-x-48.png" alt="" />
+              <span class="txt-link">Sair do aplicativo</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- BOTTOM BAR -->
+      <nav class="bottom-bar">
+        <a href="#" class="item">
+          <img src="imgs/icons8-casa-50.png" alt="" />
+          <span class="texto">Início</span>
+        </a>
+
+        <a href="documentos.html" class="item">
+          <img src="imgs/icons8-carteira-50.png" alt="" />
+          <span class="texto">Meus documentos</span>
+        </a>
+
+        <a href="#" class="item menu-btn">
+          <img src="imgs/icons8-cardápio-48.png" alt="" />
+          <span class="texto">menu</span>
+        </a>
+
+        <a href="perfil.html" class="item">
+          <img src="imgs/usuario.png" alt="" />
+          <span class="texto">Perfil</span>
+        </a>
+      </nav>
+    </main>
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+    <script>
+const campo = document.getElementById("pesquisaServicos");
+const lista = document.querySelectorAll("#lista li");
+const ulLista = document.getElementById("lista");
+
+campo.addEventListener("input", () => {
+  const valor = campo.value.toLowerCase();
+
+  let encontrou = false;
+
+  lista.forEach(item => {
+    const texto = item.innerText.toLowerCase();
+    const tags = item.dataset.tags?.toLowerCase() || "";
+
+    if (valor !== "" && (texto.includes(valor) || tags.includes(valor))) {
+      item.style.display = "block";
+      encontrou = true;
+    } else {
+      item.style.display = "none";
+    }
+  });
+
+  ulLista.style.display = encontrou ? "block" : "none";
+});
+</script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Documentos</title>
+    <!-- Linka o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+  <header class="cabeca">
+            <img src="imgs/setaBranca.png" alt="" class="setaBranca" onclick="voltar()">
+            <p class="pagina">Meus documentos</p>
+            <img src="imgs/govBranco.png" alt="" class="govBranco">
+        </header>
+    <main id="documentos" class="app paginas-comuns">
+      
+        <!-- Card 1: Identidade -->
+        <div class="card bordazul">
+            <div class="card-header">
+                <div class="avatar">👤</div>
+                <div class="user-info">
+                    <h4>nome_pessoa</h4>
+                    <p>CPF: ***.***.**-**</p>
+                </div>
+            </div>
+            <span class="document-type">Identidade</span>
+        </div>
+
+        <!-- Card 2: Título de eleitor -->
+        <div class="card bordazul">
+            <div class="card-header">
+                <div class="avatar">👤</div>
+                <div class="user-info">
+                    <h4>nome_pessoa</h4>
+                    <p>CPF: ***.***.**-**</p>
+                </div>
+            </div>
+            <span class="document-type">Título de eleitor</span>
+        </div>
+
+        <!-- Card 3: Carteira de trabalho digital (selecionado/ativo) -->
+        <div class="card bordazul" onclick="irCLT()">
+            <div class="card-header">
+                <div class="avatar">👤</div>
+                <div class="user-info">
+                    <h4>nome_pessoa</h4>
+                    <p>CPF: ***.***.**-**</p>
+                </div>
+            </div>
+            <span class="document-type">Carteira de trabalho digital</span>
+        </div>
+        
+        <!-- Botão "Adicionar documento" -->
+        <button class="add-button">
+            Adicionar documento
+        </button>
+             
+        <!-- sidebar -->
+    <nav class="menu-lateral">
+      <div class="cabeca-menu">
+        <img src="imgs/logoGov.png" alt="" style="height:30px;" />
+        <p>versão:beta-interface</p>
+      </div>
+      <ul>
+        <li class="item-menu">
+          <a href="#">
+            <img src="imgs/icons8-livro-de-regras-48.png" alt="" />
+            <span class="txt-link">Termos de uso</span
+          ></a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+          <img src=" imgs/icons8-sair-48.png" alt="" />
+          <span class="txt-link">Sair e desvincular sua conta</span>
+          </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+          <img src="imgs/icons8-x-48.png" alt="" />
+          <span class="texto">Sair do aplicativo</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+      <!-- BOTTOM BAR -->
+       <div>
+<nav class="bottom-bar">
+    <a href="#" class="item">
+        <img src="imgs/icons8-casa-50.png" onclick="irParaInicio()">
+        <span class="texto">Início</span>
+    </a>
+
+    <a href="documentos.html" class="item"> 
+        <img src="imgs/icons8-carteira-50.png" alt="">
+        <span class="texto">Meus documentos</span>
+    </a>
+
+    <a href="#" class="item menu-btn">
+        <img src="imgs/icons8-cardápio-48.png" alt="">
+        <span class="texto">menu</span>
+    </a>
+
+    <a href="perfil.html" class="item">
+        <img src="imgs/usuario.png" alt="">
+        <span class="texto">Perfil</span>
+    </a>
+</nav>
+</div>
+    </main>
+  <script src="menu.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Postal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabeca">
+        <img src="imgs/setaBranca.png" alt="" class="setaBranca" onclick="voltar()"/>
+        <p class="pagina">Caixa Postal</p>
+        <img src="imgs/govBranco.png" alt="" class="govBranco" />
+      </header>
+    <main class="app">
+<img src="imgs/icons8-cardápio-48.png" alt="" id="menuPostal" class="menu-btn"/>
+
+       <div class="search-box">
+    <img src="imgs/lupa.png">
+    <input type="text" placeholder="Pesquisar por assunto" />
+  </div>
+
+  <!-- LISTA DE MENSAGENS -->
+  <div class="lista">
+
+    <div class="msg-item" onclick="irMensagem()">
+      <strong>Receita Federal</strong>
+      <span>01/02/13</span>
+    </div>
+
+    <div class="msg-item">
+      <strong>INSS</strong>
+      <span>27/04/23</span>
+    </div>
+
+  </div>
+
+</div>
+ <nav class="menu-lateral">
+      <div class="cabeca-menu">
+        <img src="imgs/logoGov.png"/>]
+        <p>caixa postal</p>
+      </div>
+      <ul>
+        <li class="item-menu">
+          <a href="#">
+            <img src="imgs/icons8-star-26.png" alt="" />
+            <span class="txt-link">Favoritos</span
+          ></a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+          <img src=" imgs/icons8-caixa-48.png" alt="" />
+          <span class="txt-link">Arquivados</span>
+          </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+          <img src="imgs/naoLido.png" alt="" />
+          <span class="txt-link">Não lidos</span>
+          </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+          <img src="imgs/icons8-lixeira-48.png" alt="" />
+          <span class="txt-link">Lixeira</span>
+          </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+          <img src="imgs/icons8-ajuda-48.png" alt="" />
+          <span class="txt-link">Como usar a caixa postal?</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    </main>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

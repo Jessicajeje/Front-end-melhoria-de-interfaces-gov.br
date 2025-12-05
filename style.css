@@ -1,0 +1,1156 @@
+/* ============================
+   BASE
+============================ */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family:sans-serif;
+    color: #0d2d73;
+}
+
+/* 🔴 DEBUG
+* {
+  outline: 1px solid red !important;
+}*/
+
+h2 {
+    font-size:24px;
+}
+a{
+    color: #005eb5;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+/* Container padrão */
+.app {
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #ffffff;
+    
+}
+.paginas-comuns{
+    padding-bottom: 70px;
+    padding-top:100px;
+}
+
+/* ============================
+   COMPONENTES GERAIS
+============================ */
+.conteudo-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botões grandes */
+.btn {
+    display: flex;
+    width: 276px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 999px;
+    border: 1px solid #1250B4;
+    background: #1250B4;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Botão voltar (médio) */
+.botaovoltar {
+    display: inline-block;
+    width: 276px;
+    padding: 15px;
+    border-radius: 90px;
+    border: 1px solid #1250B4;
+    background: #1250B4;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight:bold;
+    font-family: sans-serif;
+}
+
+/* Botões pequenos */
+.botaoPequeno {
+    display: flex;
+    width:160px;
+    padding: 5%;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid #1250B4;
+    background: #1250B4;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+/* Inputs */
+#cpf, 
+#senha {
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #D0D0D0;
+    background: #FFF;
+}
+
+#cpf { height: 60px; }
+#senha { height: 50px; }
+
+input::placeholder {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Setas */
+.seta img{
+width: 50px;
+position: absolute;
+    top: 23px;
+    left: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #003087;
+}
+
+/* Links inferiores */
+.ajuda {
+    text-align: center;
+    margin: 30% 0;
+}
+
+.txt1 { padding-bottom:10px; }
+
+.bordazul {
+    border:1px solid #295EC1;
+}
+
+/* ============================
+   TELA DE ABERTURA
+============================ */
+#abertura {
+    height: 100vh;
+    width: 100%;
+    background: url('imgs/govabertura.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15%;
+    cursor: pointer;
+}
+
+/* ============================
+   TUTORIAL
+============================ */
+#tutoras {
+    height: 100vh;
+    background-image: url(imgs/logoGov.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 10% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+}
+
+#tutoras .texto {
+    width: 85%;
+    height: 45%;
+    margin: 0 auto;
+    padding-bottom: 280px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ============================
+   LOGIN CPF
+============================ */
+#login {
+    height: 100vh;
+    background-image: url(imgs/logoGov.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 50% 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.formulario {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+
+.textoGrande {
+    font-size: 25px;
+    font-family:sans-serif;
+    color: #162648;
+    font-weight:bold;
+}
+
+#botaologin {
+    margin-bottom: -10%;
+}
+
+#escSenha {
+    margin-right: 40%;
+    font-size: 18px;
+    color: darkblue;
+}
+
+/* ============================
+   CADASTROCPF
+============================ */
+#cadastro {
+    background-image: url(imgs/logoGov.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 25% 3%;
+    height: 100vh;
+    text-align: center;
+    display: block;
+    padding-top: 15%;
+    background-color: #f8f8f8;
+}
+
+#tutorial {
+    width: 180px;
+    margin: 0 auto;
+    padding: 10px;
+    background:#21B849;
+    color: white;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15%;
+    font-size: 18px;
+    font-weight:bold;
+    margin-bottom:4%;
+    margin-right:35%;
+    box-shadow: 2px 2px 5px #bcbcbc;
+}
+
+#cadastro form {
+    margin-top: 35%;
+}
+
+.quadrogrande {
+    padding: 5%;
+    width: 80%;
+    height: 100;
+    border-radius: 20px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
+    margin: auto;
+}
+
+#tratamento { font-size: 20px; text-decoration:none; }
+
+#botaoformcontinuar { margin-top: 15%; margin-bottom:30%; }
+
+/* ============================
+   CONFIRMAÇÃO ESTUDANTE
+============================ */
+#confirmEstudante {
+    height: 100vh;
+    background-image: url(imgs/logoGov.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 25% 3%;
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.quadro {
+    width: 344px;
+    height: 462px;
+    border-radius: 20px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    margin: auto;
+}
+
+.titulo {
+    color: #033DA0;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin:30px 10px 30px 10px
+}
+
+.botaoVerde {
+    width: 303px;
+    height: 45px;
+    margin-top: 20%;
+    margin-left: 5%;
+    background-color: #21B849;
+    border-radius: 999px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: #21B849;
+}
+
+.botaoSelect{
+    color: white;
+    background-color: #1250B4;
+    width: 102px;
+    height: 50px;
+    border-radius: 999px;
+    font-size: 18px;
+    margin: 4%;
+    border: none;
+}
+    .botoes-select{
+        padding-top: 40px;
+        padding-left:38px;
+    }
+.botaoSelect.selecionado {
+    background-color: #000c67;
+    color: white;
+    border-color: #0056b3;
+}
+/* ============================
+   cabeçalho
+============================ */
+.cabeca {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 91%;
+    height: 8%;
+    background: #2255AB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;        
+    padding: 0 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.setaBranca {
+    width: 30px;
+    height: 35px;
+}
+
+.govBranco {
+    height: 28px;
+    margin-right: 8%;
+}
+
+.pagina {
+    font-size: 16px;
+    margin-right: 35%;
+}
+
+/* ============================
+   Aba inferior
+============================ */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+
+}
+
+.bottom-bar .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    text-decoration: none;
+    color: #0f0c73;
+    user-select: none;
+}
+
+.bottom-bar .item img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.9;
+    transition: transform .25s ease;
+}
+
+.bottom-bar .item span {
+    font-size: 12px;
+    transition: color .25s ease, font-weight .25s ease;
+}
+
+.bottom-bar .item:hover img {
+    transform: scale(1.28);
+    opacity: 1;
+}
+
+.bottom-bar .item:hover span {
+    color: #000;
+}
+
+.bottom-bar .item.active img {
+    transform: scale(1.32) translateY(-3px);
+    opacity: 1;
+}
+
+.bottom-bar .item.active span {
+    color: #000;
+    font-weight: 600;
+}
+
+/* ============================
+   Perfil
+============================ */
+#perfil {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    overflow-x:hidden;
+    padding-top: 20%;
+}
+
+.circulo {
+    background-image: url(imgs/perfil.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #162648;
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    margin-top: 10%;
+}
+
+#minibotao {
+    border-radius: 999px;
+    background-color: #42588746;
+    padding:2%;
+    border:none;
+    width:150px;
+    align-items: center;
+}
+
+.info {
+    margin-top: 20%;
+    width: 80%;
+    border-top: 1px solid #2B61B9;
+    background: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#dados { padding:30px; }
+
+/* ============================
+   Assinar documentos
+============================ */
+#assinar {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px 40px 20px;
+    position: relative;
+    z-index: 999;
+}
+
+.steps-container::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    right: 20%;
+    border-top: 1px solid #0b5eda;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-basis: 33%;
+    position: relative;
+    z-index: 1; 
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #1a63ac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #0066cc;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0 2px #fff;
+}
+
+.step-label {
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.button-area {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* ============================
+   Detalhes-emprego
+============================ */
+.detalhe {
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#detalhes span { margin-top: 8px; }
+
+/* ============================
+   Documentos
+============================ */
+#documentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.card {
+
+    background-color: #fff;
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer; 
+    width: 80%;
+    padding: 20px; 
+    margin-bottom: 40px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+}
+
+.avatar {
+    width: 50px; 
+    height: 50px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 24px; 
+    color: #666;
+    border: 2px solid #0056b3;
+}
+
+.user-info h4 {
+    margin: 0;
+    font-size: 1.1rem; 
+    font-weight: 600;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.document-type {
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: auto;
+}
+
+.add-button {
+    background-color: #21B849; 
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 15px 30px; 
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom:10%;
+     left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ============================
+   ENEM & SISU
+============================ */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.menu-item img{
+height: 25px;
+width: auto;
+}
+.menu-item{
+    padding: 6px;
+}
+
+h2 {
+    color: #1a237e;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.info-text {
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+    padding: 0 20px 20px;
+}
+
+.sisu-link span {
+    color: #3f51b5;
+}
+.link{
+    text-align: center;
+}
+/* ============================
+  BENEFICIOS SOCIAIS
+============================ */
+.cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-icon {
+    margin-right: 15px;
+}
+.card-icon img{
+    height:50px;
+    width: auto;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #162648;
+}
+
+.card-value {
+    font-size: 14px;
+    color: #4CAF50;
+    margin-top: 4px;
+}
+
+.card-date {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
+
+.card.inactive .card-icon {
+    opacity: 0.6;
+}
+
+.card.inactive .card-title,
+.card.inactive .card-status {
+    color: #888;
+}
+
+.card-status {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
+
+.details-button {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid #1250B4;
+    background: transparent;
+    font-size: 12px;
+    color: #1250B4;
+    text-align: center;
+    cursor: pointer;
+    margin-top:15px;
+}
+
+/* ============================
+  MENSAGEM POSTAL
+============================ */
+#mensagem {
+    margin-top: 30px;
+    padding: 6%;
+}
+
+.pag {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pag h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #0d2d7c;
+  padding-left:5px;
+}
+
+.pag img {
+    padding-left:4%;
+    height:40px;
+}
+
+#msg { margin-top:10%; }
+
+.icones {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.5px solid #bcc0c7;
+    height: 50px;
+}
+.icones div img {
+    width: 30px;
+    height:auto;
+}
+#setazul{
+    height: 50px;
+    width: auto;
+}
+
+.search-box img { 
+    height: 25px;
+    width: auto;
+  display: block;
+  flex: 0 0 34px;
+  object-fit: contain;
+}
+.search-box{
+   width: 330px;
+  margin:15px;
+  position:relative;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid #ccd3dd;
+  border-radius: 8px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.search-box input {
+  flex: 1 1 auto;
+  min-width: 0; 
+  border: none;
+  outline: none;
+  font-size: 15px;
+  align-items: center;
+}
+
+.lista {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  margin:15px;
+  border: 1px solid #d0d0d0;
+}
+
+.msg-item {
+  background: #eef2f7;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.msg-item strong {
+  color: #003087;
+}
+/*=====caixa postal=====*/
+.msg-item span {
+  color: #444;
+  font-size: 13px;
+}
+
+#menuPostal {margin-top:80px; margin-bottom:40px}
+/* ======= carteira de estudante ======= */
+#infoEstudante {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border: 1px solid #dfecff;
+}
+.info-text a{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 15px; 
+}
+.foto {
+    width: 90%;
+    height: 300px;
+    background-color: #e9e9e9;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #003366;
+    margin: 1%;
+}
+
+.telacheia {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    border-radius:5px;
+}
+/* ============================
+  BAIXAR CERTIDÕES
+============================ */
+#certidao{
+    padding-bottom: 170px;
+    margin-top: -260px;
+}
+#selecao {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+input[type='checkbox']{
+    transform: scale(2.0);
+    margin-right: 20px; 
+    color: #0056b3;
+}
+.box{
+    padding: 30px;
+    border-bottom:1px solid #aab0b9;
+    
+}
+#quadrado{
+     width: 344px;
+    height: 324px;
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    margin-top: -80px;
+}
+/* ============================
+  cadastro
+============================ */
+#quadro{
+    margin-top:60px;
+    padding: 18px;
+}
+#quadro input{
+    height: 60px;
+    width: 270px;
+    display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-color: #005eb5;
+}
+#quadro label {
+    margin-top:24px;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+#quadro form{margin-top:0px;}
+
+#requisitos ul {
+  list-style: none;
+  padding-left: 0; 
+}
+
+#requisitos li {
+    color: rgb(0, 0, 0);
+  margin-bottom: 5px;
+  text-align: left; 
+}
+#butonForm{
+    background-color: #21B849; 
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 15px 80px; 
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   margin: 10%;
+
+}
+/* ============================
+        Side bar 
+============================ */
+.cabeca-menu{
+    padding:0 10px 15px 20px;
+}
+.cabeca-menu p{
+    border-bottom: 1px solid #003087;
+    margin-bottom: 20px;
+}
+.cabeca-menu img{
+height:30px;
+margin-bottom: 10px;
+}
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 220px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 30px 10px 0 0;
+    transition: left 0.1s ease;
+    z-index: 999;
+}
+.item-menu img{
+margin-right:8px;
+}
+
+.menu-lateral.aberto{
+    left: 0;
+}
+ul{
+list-style-type: none;
+padding-left: 20px;
+}
+ul li.item-menu a{
+    color: #000c67;
+    text-decoration: none;
+    font-size: 16px;
+    height: 35px;
+    padding: 10px 1% 0 0px;
+    display: flex;
+    padding-bottom: 30px;
+}
+ul li.item-menu{
+    transition:0.2s;
+}
+
+ul li.item-menu:hover{
+background-color: #dfecff;
+}
+/* ============================
+  INICIO CIDADÃO
+============================ */
+.inicioAcima {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:20px;
+  border-bottom: 1px solid #ccd3dd;
+
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+}
+
+.inicioAcima img[src="imgs/logoGov.png"]{
+  height: 35px;
+  width:100px;
+}
+.inicio{
+    padding-top: 20px;
+}
+
+.boasVindas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin:40px 0 10px 20px;
+}
+
+.boasVindas p {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b204f;
+  margin: 0;
+}
+
+.fotoPerfil img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px solid #0053a0;
+  margin-left:50px;
+}
+/*conteudo rolavel*/
+.conteudoRolavel {
+  margin-top:240px;
+  padding:20px;
+}
+.conteudoRolavel img{
+    height:30px;
+    margin-right: 8px;
+}
+.conteudoRolavel li{
+margin:0 20px 0 20px;
+
+}
+
+.servicos-gerais h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.servicos-gerais li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #e1e5eb;
+  transition: 0.2s;
+  box-shadow: 0 2px 6px rgba(13, 7, 87, 0.15);
+
+}
+
+.servicos-gerais li:hover {
+  background: #f0f4ff;
+  border-color: #0053a0;
+}
+
+.servicos-gerais li img {
+  width: 28px;
+}
+
+.servicos-gerais li span {
+  font-size: 16px;
+  color: #0738a1;
+  font-weight: 600;
+}
+.servicos-gerais ul{
+    padding: 0;
+}
+.servicos-estudantis li{
+    display: flex;            
+    gap: 15px;                 
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px; 
+}
+
+.servicos-estudantis ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+.servicos-estudantis li:hover {
+  background: #f0f4ff;
+  border-color: #0053a0;
+}
+#lista {
+    background-color: #ffff;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 40px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+#lista li {
+  padding: 5px 0;
+}
+
+#lista li a {
+  color: #0b3d91;
+  text-decoration: none;
+}
+
+#lista li:hover {
+  text-decoration: underline;
+}

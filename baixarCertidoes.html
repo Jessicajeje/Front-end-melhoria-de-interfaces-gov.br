@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixar certidões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="noScroll">
+    <header class="cabeca">
+        <img src="imgs/setaBranca.png" alt="" class="setaBranca" onclick="voltar()"/>
+        <p class="pagina">Baixar certidões</p>
+        <img src="imgs/govBranco.png" alt="" class="govBranco" />
+      </header> 
+
+    <main class="app conteudo-central paginas-comuns">
+       <h2  id="certidao" class="titulo"> SELECIONE A CERTIDÃO QUE DESEJA BAIXAR:</h2>
+        <div id="quadrado" class="bordazul">
+            <div id="selecao">
+            <div class="box"><input type="checkbox">Certidão de nascimento</div>
+             <div class="box"><input type="checkbox">Certidão de casamento</div>
+              <div class="box"><input type="checkbox">Certidão de óbito</div>
+               <div class="box"><input type="checkbox">Certidão negativa</div>
+        </div>
+         <button class="add-button">
+            Baixar certidão
+        </button>
+                   <!-- BOTTOM BAR -->
+      <nav class="bottom-bar">
+        <a href="#" class="item">
+          <img src="imgs/icons8-casa-50.png" onclick="irParaInicio()"/>
+          <span class="texto">Início</span>
+        </a>
+
+        <a href="documentos.html" class="item">
+          <img src="imgs/icons8-carteira-50.png" alt="" />
+          <span class="texto">Meus documentos</span>
+        </a>
+
+        <a href="#" class="item menu-btn">
+          <img src="imgs/icons8-cardápio-48.png" alt="" />
+          <span class="texto">menu</span>
+        </a>
+
+        <a href="perfil.html" class="item">
+          <img src="imgs/usuario.png" alt="" />
+          <span class="texto">Perfil</span>
+        </a>
+      </nav>
+    </main>
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

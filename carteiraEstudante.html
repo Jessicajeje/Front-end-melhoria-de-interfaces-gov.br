@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carteira de estudante</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cabeca">
+      <img
+        src="imgs/setaBranca.png"
+        alt=""
+        class="setaBranca"
+        onclick="voltar()"
+      />
+      <p class="pagina">Carteira de estudante</p>
+      <img src="imgs/govBranco.png" alt="" class="govBranco" />
+    </header>
+    <main class="app conteudo-central paginas-comuns">
+      <div class="card" id="infoEstudante">
+        <div class="card-header">
+          <div class="user-info">
+            <h4>Estudante:nome_pessoa</h4>
+            <br />
+            <p>Instituição: IFPE- Jaboatão dos Guararapes</p>
+            <p>Curso: *********</p>
+            <p>Validade: 12/2026</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Carteira de Estudante</h2>
+      <div class="foto">
+        <p>frente</p>
+        <div class="telacheia"><img src="imgs/telaCheia.png" alt="" /></div>
+      </div>
+      <div class="foto">
+        <p>verso</p>
+        <div class="telacheia"><img src="imgs/telaCheia.png" alt="" /></div>
+      </div>
+
+      <div class="info-text">
+        <p>Para solicitar uma nova carteira de estudante, acesse:</p>
+        <br />
+        <a
+          href="https://www.granderecife.pe.gov.br/servicos/carteira-de-identificacao-estudantil/"
+          >Acesso à carteira de estuante</a
+        >
+      </div>
+      <div class="info-text">
+        <p>Para saber mais sobre seus direitos estudantis, acesse:</p>
+        <br />
+        <a
+          href="https://www.ubes.org.br/2025/conheca-os-direitos-do-estudante-com-a-carteirinha-ubes/"
+          >Direitos do estudante com a carteirinha</a
+        >
+      </div>
+            <!-- BOTTOM BAR -->
+      <nav class="bottom-bar">
+        <a href="#" class="item">
+          <img src="imgs/icons8-casa-50.png" onclick="irParaInicio()"/>
+          <span class="texto">Início</span>
+        </a>
+
+        <a href="documentos.html" class="item">
+          <img src="imgs/icons8-carteira-50.png" alt="" />
+          <span class="texto">Meus documentos</span>
+        </a>
+
+        <a href="#" class="item menu-btn">
+          <img src="imgs/icons8-cardápio-48.png" alt="" />
+          <span class="texto">menu</span>
+        </a>
+
+        <a href="perfil.html" class="item">
+          <img src="imgs/usuario.png" alt="" />
+          <span class="texto">Perfil</span>
+        </a>
+      </nav>
+    </main>
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

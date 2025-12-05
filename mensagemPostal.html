@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mensagem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="noScroll">
+    <main class="app" id="postal">
+      <div class="pag">
+        <img src="imgs/icons8-cardápio-48.png" alt="" class="menu-btn"/>
+        <h2>Caixa Postal</h2>
+      </div>
+      <div class="quadrogrande bordazul" id="msg">
+        <div class="icones">
+          <div><img src="imgs/setazul.png" id="setazul" onclick="voltar()"/></div>
+
+          <div id="fav"><img src="imgs/icons8-star-26.png" alt="" /></div>
+
+          <div id="nLido"><img src="imgs/naoLido.png" alt="" /></div>
+
+          <div id="arqv"><img src="imgs/icons8-caixa-48.png" alt="" /></div>
+
+          <div id="lixo"><img src="imgs/icons8-lixeira-48.png" alt="" /></div>
+        </div>
+        <div id="mensagem">
+          <h2>Receita Federal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            elit augue, porttitor vitae fringilla vitae, feugiat vel lectus.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Integer quis pharetra augue. Morbi efficitur, ante id feugiat
+            auctor, dolor nunc blandit sapien, non bibendum sapien eros nec
+            nunc. Sed nulla turpis, finibus a dictum ac, vestibulum sit amet
+            metus. Duis mauris lorem, porttitor quis tortor ut, gravida
+            fringilla neque. Phasellus quis nisi commodo, dignissim nisi vitae,
+            bibendum risus. Nunc eget arcu pretium, feugiat ipsum et, facilisis
+            elit.
+          </p>
+          <p class="card-date">Enviado: 01/02/13</p>
+        </div>
+      </div>
+             <!-- sidebar -->
+    <nav class="menu-lateral">
+      <div class="cabeca-menu">
+        <img src="imgs/logoGov.png" alt="" style="height:30px;" />
+      </div>
+      <ul>
+        <li class="item-menu">
+          <a href="#">
+            <img src="imgs/icons8-star-26.png" alt="" />
+            <span class="txt-link">Favoritos</span
+          ></a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+          <img src=" imgs/icons8-caixa-48.png" alt="" />
+          <span class="txt-link">Arquivados</span>
+          </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+          <img src="imgs/naoLido.png" alt="" />
+          <span class="txt-link">Não lidos</span>
+          </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+          <img src="imgs/icons8-lixeira-48.png" alt="" />
+          <span class="txt-link">Lixeira</span>
+          </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+          <img src="imgs/icons8-ajuda-48.png" alt="" />
+          <span class="txt-link">Como usar a caixa postal?</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    </main>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>

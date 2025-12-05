@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="app">
+      <section id="cadastro">
+        <div class="seta">
+        <img src="imgs/setazul.png" onclick="voltar()">
+        </div>
+        <div class="quadrogrande" id="quadro">
+            <p>Preencha seus dados corretamente:</p><br>
+            
+          <form action="" method="post">
+            <label for="nomeCompleto">Nome completo:</label>
+            <input type="text" id="nome" />
+            <label for="cpfInput">CPF:</label>
+            <input type="text" id="cpfInput" />
+            <label for="data">Data de nascimento:</label>
+            <input type="text" id="data" />
+            <label for="telefone">Telefone-celular:</label>
+            <input type="text" id="telefone" />
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" />
+            <label for="senhaInput">Crie uma senha de acesso:</label>
+            <input type="password" id="senhaInput" />
+          </form>
+          <div id="requisitos">
+            <ul>
+              <li>❌ mínimo 8 caracteres</li>
+              <li>❌ incluir letra</li>
+              <li>❌ incluir número</li>
+              <li>❗ anote a senha em um local seguro</li>
+            </ul>
+          </div>
+            <button id="butonForm" onclick="irConfirmEstudante()">
+            Continuar
+        </button>
+             
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

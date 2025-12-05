@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gov.br</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body class="noScroll">
+    <main id="login" class="app">
+        <div class="seta">
+        <img src="imgs/setazul.png" onclick="voltar()">
+        </div>
+        <form class="formulario" method="post">
+            <label id="digitecpf" class="texto" for="senha"><b>Digite sua senha:</b></label><br>
+            <input type="password" id="senha" name="senha"><br><br>
+            <a id="escSenha" href="recuperacao.html">Esqueceu a senha?</a>
+        </form>
+
+        <div class="botao">
+            <button class="botaoPequeno" onclick="voltar()"><b>Cancelar</b></button>
+            <button class="botaoPequeno" id="prosseguir" type="submit" onclick="irParaInicio()"><b>Entrar</b></button>
+        </div>
+
+        <div class="ajuda">
+            <a href="">Estou com dúvidas e preciso de ajuda</a><br><br>
+            <a href="">Termos de uso e aviso de privacidade</a>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

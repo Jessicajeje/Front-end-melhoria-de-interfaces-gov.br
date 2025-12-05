@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="noScroll">
+    <main class="app">
+        <section id="cadastro">
+ <div class="seta">
+        <img src="imgs/setazul.png" onclick="voltar()">
+        </div>
+                <button id="tutorial" onclick="irPasso()">tutorial</button>
+           
+
+            <div class="quadrogrande">
+                <p class="texto">Digite seu CPF para criar uma conta</p>
+
+                <form method="post">
+                    <label for="cpf" class="textoGrande">CPF:</label><br>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+                </form>
+
+                <button class="botaovoltar" id="botaoformcontinuar" onclick="irCadastro()">Continuar</button>
+                
+
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

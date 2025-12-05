@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefícios</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+        <header class="cabeca">
+            <img src="imgs/setaBranca.png" alt="" class="setaBranca" onclick="voltar()">
+            <p class="pagina">Benefícios</p>
+            <img src="imgs/govBranco.png" alt="" class="govBranco">
+        </header>
+    <main class="app conteudo-central cards-container">
+      
+         <h2 class="texto">Benefícios ativos</h2>
+        <!-- Card 1: bolsa família-->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon"><img src="imgs/familia.png" alt=""></div>
+                <div class="card-details">
+                    <span class="card-title">Bolsa família</span>
+                    <span class="card-value">valor: R$500,00</span>
+                    <span class="card-date">Próximo pagamento: 23/11/25</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: auxilio gás-->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon"><img src="imgs/icons8-gas-burner-48.png" alt=""></div>
+                <div class="card-details">
+                  <span class="card-title">Auxílio gás</span>
+                    <span class="card-value">valor: R$120,00</span>
+                    <span class="card-date">Próximo pagamento: 05/12/25</span>
+                </div>
+            </div>
+        </div>
+        <h2 class="texto">Benefícios encerrados</h2>
+        <!-- Card 3:auxilio emergencial (inativo) -->
+        <div class="card inactive">
+            <div class="card-header">
+                <div class="card-icon"><img src="imgs/icons8-dinheiro-94.png" alt=""></div>
+                <div class="card-details">
+                      <span class="card-title">Auxílio emergencial </span>
+                    <span class="card-status">Encerrado em 09/10/21</span>
+                    <button class="details-button">Ver detalhes</button>
+                </div>
+            </div>
+        </div>
+          <!-- BOTTOM BAR -->
+       <div>
+<nav class="bottom-bar">
+    <a href="#" class="item">
+        <img src="imgs/icons8-casa-50.png" onclick="irParaInicio()">
+        <span class="texto">Início</span>
+    </a>
+
+    <a href="documentos.html" class="item"> 
+        <img src="imgs/icons8-carteira-50.png" alt="">
+        <span class="texto">Meus documentos</span>
+    </a>
+
+    <a href="#" class="item menu-btn">
+        <img src="imgs/icons8-cardápio-48.png" alt="">
+        <span class="texto">menu</span>
+    </a>
+
+    <a href="perfil.html" class="item">
+        <img src="imgs/usuario.png" alt="">
+        <span class="texto">Perfil</span>
+    </a>
+</nav>
+</div>
+    </main>
+    <script src="menu.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
