@@ -85,6 +85,12 @@ botaoConcluir.addEventListener('click', function() {
        window.location.href="inicioCidadao.html"
     }
 });
-
+//sair do app
+function logoutSimulation() {
+  
+    localStorage.removeItem('isUserLoggedIn'); 
+    localStorage.removeItem('userName');
+    sessionStorage.clear();
+    window.location.href = 'index.html'; 
 
 
