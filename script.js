@@ -43,6 +43,9 @@ window.location.href="passo.html"
   function irBeneficios(){
       window.location.href="beneficiosSociais.html"
   }
+function irBolsas(){
+  window.location.href="bolsasEstudantis.html";
+}
 function irParaInicio() {
   const isEstudante = localStorage.getItem("isEstudante") === "true";
 
